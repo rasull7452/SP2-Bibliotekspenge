@@ -11,6 +11,11 @@ public class PrintedBook extends Title {
     }
 
     protected double calculatePoints(){
+        double points = 0;
+        double literaturTypeValue = convertLiteratureType();
 
+        points = pages  * copies;
+
+        return points;
     }
 }

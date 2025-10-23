@@ -18,7 +18,35 @@ abstract class Title {
 
     }
 
-    protected double convertLiteratureType(){
+    protected double convertLiteratureType() {
 
+        double value = 0;
+
+        switch (literatureType) {
+            case "BI":
+                value = 3;
+                break;
+
+            case "TE":
+                value = 3;
+                break;
+
+            case "LYRIK":
+                value = 6;
+                break;
+
+            case "SKØN":
+                value = 1.7;
+                break;
+
+            case "FAG":
+                value = 1;
+                break;
+
+            default:
+                System.out.println("Du har valgt en literatur type som ikke eksisterer i systemet");
+        }
+
+        return value;
     }
 }

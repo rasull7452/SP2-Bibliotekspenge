@@ -5,21 +5,21 @@ abstract class Title {
     private String literatureType;
     private static final double RATE = 0.067574;
 
-    public Title(String title, String literatureType){
+    public Title(String title, String literatureType) {
         this.title = title;
         this.literatureType = literatureType;
     }
 
-    public double calculateRoyalty(){
+    public double calculateRoyalty() {
         double royalty = 0;
         double points = calculatePoints();
 
         royalty = points * RATE;
 
-       return royalty;
+        return royalty;
     }
 
-   abstract protected double calculatePoints()
+   abstract protected double calculatePoints();
 
     protected double convertLiteratureType() {
 

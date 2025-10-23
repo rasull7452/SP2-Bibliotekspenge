@@ -15,7 +15,12 @@ public class Author {
     }
 
     double calculateRoyalties(){
+        double totalRoyalties = 0;
+        for(Title title : titles){
+            totalRoyalties += title.calculateRoyalty();
+        }
 
+        return totalRoyalties;
     }
 
     public String getName() {

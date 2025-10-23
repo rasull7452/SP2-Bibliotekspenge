@@ -24,5 +24,7 @@ public class LibraryRoyaltyCalculator {
         System.out.println(a2.calculateRoyalties()); */
 
         System.out.println(a1.calculateRoyalties());
+
+        a1.showAuthorRoyalties();
     }
 }

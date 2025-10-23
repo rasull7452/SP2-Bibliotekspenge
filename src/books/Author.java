@@ -23,6 +23,12 @@ public class Author {
         return Math.round(totalRoyalties * 100.0) / 100.0;
     }
 
+    public void showAuthorRoyalties(){
+
+        System.out.println(this.name + ": " + calculateRoyalties() + "kr");
+
+    }
+
     public String getName() {
         return name;
     }

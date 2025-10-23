@@ -23,11 +23,7 @@ abstract class Title {
         double value = 0;
 
         switch (literatureType) {
-            case "BI":
-                value = 3;
-                break;
-
-            case "TE":
+            case "BI", "TE":
                 value = 3;
                 break;
 

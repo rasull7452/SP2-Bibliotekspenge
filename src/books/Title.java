@@ -11,12 +11,15 @@ abstract class Title {
     }
 
     public double calculateRoyalty(){
+        double royalty = 0;
+        double points = calculatePoints();
 
+        royalty = points * RATE;
+
+       return royalty;
     }
 
-   protected double calculatePoints(){
-
-    }
+   abstract protected double calculatePoints()
 
     protected double convertLiteratureType() {
 

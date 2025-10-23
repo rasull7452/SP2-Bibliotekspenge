@@ -10,15 +10,15 @@ abstract class Title {
         this.literatureType = literatureType;
     }
 
-    double calculateRoyalty(){
+    public double calculateRoyalty(){
 
     }
 
-    double calculatePoints(){
+   protected double calculatePoints(){
 
     }
 
-    double convertLiteratureType(){
+    protected double convertLiteratureType(){
 
     }
 }

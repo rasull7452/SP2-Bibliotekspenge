@@ -10,7 +10,7 @@ public class PrintedBook extends Title {
         this.copies = copies;
     }
 
-    double calculatePoints(){
+    protected double calculatePoints(){
 
     }
 }

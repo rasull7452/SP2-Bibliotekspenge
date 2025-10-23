@@ -10,7 +10,7 @@ public class Author {
         this.name = name;
     }
 
-    void addTitle(Title title){
+    public void addTitle(Title title){
         titles.add(title);
     }
 

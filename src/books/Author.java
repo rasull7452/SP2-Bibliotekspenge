@@ -20,7 +20,7 @@ public class Author {
             totalRoyalties += title.calculateRoyalty();
         }
 
-        return totalRoyalties;
+        return Math.round(totalRoyalties * 100.0) / 100.0;
     }
 
     public String getName() {

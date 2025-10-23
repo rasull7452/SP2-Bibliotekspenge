@@ -11,6 +11,18 @@ public class LibraryRoyaltyCalculator {
         a1.addTitle(b2);
         a1.addTitle(ab1);
 
+        /* TEST FOR AT SE OM DET VIRKER
+        Author a2 = new Author("Test");
+        PrintedBook tb1 = new PrintedBook("Celestine", "SKØN", 166, 140);
+        AudioBook tb2 = new AudioBook("Celestine Audio", "SKØN", 192,140);
+
+        a2.addTitle(tb1);
+        a2.addTitle(tb2);
+
+        System.out.println(tb2.calculatePoints());
+
+        System.out.println(a2.calculateRoyalties()); */
+
         System.out.println(a1.calculateRoyalties());
     }
 }

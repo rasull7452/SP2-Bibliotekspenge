@@ -11,6 +11,12 @@ public class AudioBook extends Title {
     }
 
     protected double calculatePoints(){
+        double points = 0;
+        double literatureTypeValue = convertLiteratureType();
 
+        points = (durationInMinutes * 0.5) * literatureTypeValue * copies;
+
+
+        return points;
     }
 }
